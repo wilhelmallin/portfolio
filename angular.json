@@ -22,10 +22,26 @@
               "src/favicon.ico",
               "src/assets"
             ],
+
             "styles": [
-              "src/styles.css"
+              "src/styles.css"           
             ],
-            "scripts": []
+            "scripts": [
+              
+              "src/assets/js/jquery-1.11.0.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.cookie.js",
+              "src/assets/js/waypoints.min.js",
+              "src/assets/js/gmaps.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/masonry.pkgd.min.js",
+              "src/assets/js/jquery.counterup.min.js",
+              "src/assets/js/jquery.scrollTo.min.js",
+              "src/assets/js/jquery.parallax-1.1.3.js",
+              "src/assets/js/front.js",
+              "src/assets/js/modernizr-2.6.2.min.js",
+              "src/assets/js/progress.js"
+            ]  
           },
           "configurations": {
             "production": {

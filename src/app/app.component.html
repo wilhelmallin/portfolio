@@ -1,20 +1,382 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+  <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand scrollTo" href="#intro">{{UserInfos?.name}}</a>
+      </div>
 
+      <div class="navbar-collapse collapse" id="navigation">
+
+          <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#intro">Home</a>
+              </li>
+              <li><a href="#about">About</a>
+              </li>
+              <li><a href="#services">Skills</a>
+              </li>
+              <li><a href="#exerience">Experience</a>
+              </li>
+              <li><a href="#portolio">Portfolio</a>
+              </li>
+              <li><a href="#clients">Clients</a>
+              </li>
+              <li><a href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <!--/.nav-collapse -->
+  </div>
+</div>
+<!-- /#navbar -->
+<!-- *** INTRO IMAGE ***
+________________________________________________________ -->
+<div id="intro" class="clearfix">
+    <div class="item">
+        <div class="container">
+            <div class="row">
+                <div class="carousel-caption">
+                    <div data-animate="fadeInDown" class="logo">
+                        <img src="../../../assets/img/logo-big.png" alt="logo" width="130">
+                    </div>
+                        <h1 data-animate="fadeInDown">{{UserInfos?.name}}</h1>                  
+                        <h2 data-animate="slideInUp">{{UserInfos?.comment}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <!-- *** INTRO IMAGE END *** -->
+  
+  <!-- *** ABOUT ***
+_________________________________________________________ -->
+<section class="about-area dark-version section-padding bg-color-3" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center mb-60">
+                    <h2 class="mb-20 white-color" data-animate="fadeInDown">About Me</h2>
+                    <div class="horizontal-line">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="left mr-40">
+                    <h3 class="font-22 capitalize white-color" >Howdy!</h3>
+                    <p class="font-16 line-height-28">
+                        {{UserInfos?.overview}}
+                    </p>
+                    <div class="about-button mt-30">
+                        <a class="btn" href="#">Download my cv</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" data-animate="bounceIn">
+                <img src="../../../assets/img/about.png" class="image img-circle img-responsive" alt="This is me - IT worker">
+            </div>
+            
+        </div>
+    </div>
+</section>
+  <!-- *** ABOUT END *** -->
+<!-- *** SHOWCASE ***
+_________________________________________________________ -->
+<div class="section text-parallax parallax-image1" id="skills">
+    <div class="container">
+        <div class="row showcase" style="color:#fffcfc;">
+            <div class="col-md-2 col-sm-6" data-animate="fadeInUp">
+                <div class="item">
+                    <div><img src="../assets/img/expertin/angular.png">
+                    </div>
+                    <h3>AngularJS<br></h3>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6" data-animate="fadeInUp">
+                    <div class="item">
+                        <div><img src="../assets/img/expertin/nodejs.png">
+                        </div>
+                        <h3>NodeJS<br></h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6" data-animate="fadeInUp">
+                        <div class="item">
+                            <div><img src="../assets/img/expertin/mongo.png">
+                            </div>
+                            <h3>MongoDB<br></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6" data-animate="fadeInUp">
+                            <div class="item">
+                                <div><img src="../assets/img/expertin/bootstrap.png">
+                                </div>
+                                <h3>Bootstrap<br></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6" data-animate="fadeInUp">
+                                <div class="item">
+                                    <div><img src="../assets/img/expertin/typescript.png">
+                                    </div>
+                                    <h3>TypeScript<br></h3>
+                                </div>
+                            </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <div class="dark-mask"></div>
+
+</div>
+<!-- /.section -->
+
+<app-education></app-education>
+<!-- *** REFERENCES IMAGE ***
+_________________________________________________________ -->
+<div class="section" id="portfolio">
+    <div class="container">
+        <div class="col-sm-12">
+
+            <h2  class="mb-20 white-color">My Work</h2>
+            <div  class="horizontal-line"><div class="top"></div><div class="bottom"></div></div>
+            <div id="detail">
+
+                <span class="close">&times;</span> 
+
+                <div id="detail-slider"></div>
+
+                <div class="text-center">
+                    <h1 id="detail-title">&nbsp;</h1>
+                </div>
+
+                <div id="detail-content"></div>
+
+            </div>
+            <!-- Reference detail -->
+
+            <div id="references-masonry" data-animate="fadeInUp">
+
+                <div class="reference-item" data-category="webdesign">
+                    <div class="reference">
+                        <a href="https://www.fhoke.com/">
+                            <img src="../assets/img/portfolio-1.jpg" class="img-responsive" alt="" />
+
+                            <div class="overlay">
+                                <h3 class="reference-title">www.fhoke.com</h3> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.12 -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.section -->
+
+<!-- *** REFERENCES END *** -->
+<section class="experience-area dark-version section-padding dark-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center mb-60" >
+                    <h2 class="mb-20 white-color">My Experience</h2>
+                    <div class="horizontal-line">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 mobile-mb-30">
+                <div class="left">
+                    <div class="single-experi mb-50" data-animate="fadeInDown">
+                        <div class="left-text floatleft relative">
+                            <div class="dashed-line"></div>
+                            <h4 class="montserrat weight-medium mb-5 capitalize light-color">Behance</h4>
+                            <p class="montserrat weight-medium">2008-2011</p>
+                        </div>
+                        <div class="right-text">
+                            <i class="fa fa-check-circle"></i>
+                            <h3 class="capitalize font-20 light-color">Web Designer &amp; Developer</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                        </div>
+                    </div>
+                    <div class="single-experi"  data-animate="fadeInDown">
+                        <div class="left-text floatleft">
+                            <h4 class="montserrat weight-medium mb-5 capitalize light-color">Regaltheme</h4>
+                            <p class="montserrat weight-medium">20011-2013</p>
+                        </div>
+                        <div class="right-text">
+                            <i class="fa fa-check-circle"></i>
+                            <h3 class="capitalize font-20 light-color">Graphic Designer</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="right">
+                    <div class="single-experi mb-50" data-animate="fadeInDown">
+                        <div class="left-text floatleft relative">
+                            <div class="dashed-line"></div>
+                            <h4 class="montserrat weight-medium mb-5 capitalize light-color">Wipux</h4>
+                            <p class="montserrat weight-medium">20013-2017</p>
+                        </div>
+                        <div class="right-text">
+                            <i class="fa fa-check-circle"></i>
+                            <h3 class="capitalize font-20 light-color">Web &amp; Print Designer</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                        </div>
+                    </div>
+                    <div class="single-experi" data-animate="fadeInDown">
+                        <div class="left-text floatleft">
+                            <h4 class="montserrat weight-medium mb-5 capitalize light-color">Themeforest</h4>
+                            <p class="montserrat weight-medium">2017-</p>
+                        </div>
+                        <div class="right-text">
+                            <i class="fa fa-check-circle"></i>
+                            <h3 class="capitalize font-20 light-color">Senior &amp; Web&amp;Developer</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- *** CUSTOMERS ***
+_________________________________________________________ -->
+
+<div class="section text-gray" id="customers">
+    <div class="container">
+        <div class="col-md-12">
+
+
+            <div class="row">
+                <div class="col-sm-4 col-md-2  col-xs-6">
+                    <div class="customer">
+                        <img class="img-responsive" src="../assets/img/customers/kofola.png" title="Kofola" data-placement="bottom" data-toggle="tooltip" alt="">
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-2  col-xs-6">
+                    <div class="customer">
+                        <img class="img-responsive" src="../assets/img/customers/evian.png" title="Evian" data-placement="bottom" data-toggle="tooltip" alt="">
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-md-2  col-xs-6">
+                    <div class="customer">
+                        <img class="img-responsive" src="../assets/img/customers/cslink.png" title="CS Link" data-placement="bottom" data-toggle="tooltip" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+
+        </div>
+        <!-- /.12 -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.section -->
+
+<!-- *** CUSTOMERS END *** -->
+
+<!-- *** CONTACT ***
+_________________________________________________________ -->
+
+<div class="section contact" id="contact" data-animate="bounceIn">
+    <div class="container">
+        <div class="col-md-12">
+
+
+            <h2 class="title">Contact me</h2>
+
+            <div class="row">
+
+                <div class="col-md-8 col-md-offset-2">
+                    <form id="contact-form" method="post" action="contact.php">
+
+                        <div class="messages">
+
+                        </div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="phone" class="form-control" placeholder="Your phone">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <input type="submit" class="btn btn-primary btn-lg" value="Send message">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.12 -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.section -->
+
+<!-- *** CONTACT END *** -->
+
+
+<!-- *** FOOTER ***
+_________________________________________________________ -->
+
+<div class="section" id="footer">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <p class="social">
+                    <a href="#" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="external instagram" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                </p>
+            </div>
+            <!-- /.6 -->
+
+            <div class="col-sm-6">
+                <p>&copy; 2018 Your name goes here. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.section -->
+
+<!-- *** FOOTER END *** -->

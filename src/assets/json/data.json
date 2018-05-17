@@ -1,0 +1,36 @@
+{
+    "userinfo": {
+        "name": "Xian Rong",
+        "comment": "Senior Web Developer",
+        "overview":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by th charms of pleasure of the moment, so blinded by desire, tht they cannot foresee the pain and trouble that are"
+    },
+    "skillinfo": [{
+        "name": "AngularJS",
+        "percent": "Senior Web Developer"},
+        {"name": "NodeJS",
+            "percent": "Senior Web Developer"},
+        {"name": "ReactJS",
+                "percent": "Senior Web Developer"}
+        
+    ],
+    "education": {
+        "title": "EDUCATION",
+        "content": [{
+            "title": "Bachelor Degree in Applied Informatics",
+            "subtitle": "University of Macedonia, Greece",
+            "year": "2002 - 2008"
+        }, {
+            "title": "Diploma of Graphic Design",
+            "subtitle": "Swinburne University, Australia",
+            "year": "2014"
+        }, {
+            "title": "ITL Foundation (IT Service Management)",
+            "subtitle": "ItFutures, Australia",
+            "year": "2012"
+        }, {
+            "title": "Certificate VI in Small Business Management",
+            "subtitle": "RMIT University, Australia",
+            "year": ""
+        }]
+    }
+}
